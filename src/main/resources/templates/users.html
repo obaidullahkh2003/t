@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf Example</title>
+</head>
+<body>
+<form action="#" th:action="@{/save}" th:object="${user}" method="post">
+    <input type="text" th:field="*{username}" />
+    <input type="password" th:field="*{password}" />
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
+
+
